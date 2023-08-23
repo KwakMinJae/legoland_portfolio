@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/p_cus_use_01.css">
+    <title>파크 주문조회 | LEGOLAND Korea Resort</title>
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <!-- <script src="/js/p_cus_use_01.js"></script> -->
+
+    <script>
+        $(document).ready( function() {
+            $("#header").load("../header/header.html");
+            $("#footer").load("../footer/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+
+      <div class="main_title">
+        <div class="main_title_img">
+            <div class="main_title_txt">
+                <h3>주문조회</h3>
+            </div>
+          </div>
+    </div>
+    <main class="main" id="main" name="main">
+    <section class="form_wrapping">
+        <div class="lost_pro_form">
+    <h4 class="order_check_title">주문조회 할 수 있습니다 !!</h4>
+    <form name="check" action="" method="" id="order_check_form" onsubmit="return validateForm(event)">
+        <div class="ask_form_text">
+            <fieldset class="ask_com_bor">
+                <legend>주문조회</legend>
+                    <div class="order_ic_wrap">
+                        <div class="order_check_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                            </svg>
+                        </div>
+                        <div class="order_check_form_text">
+                            <p><span class="check_blue_text">과거의 주문에 액세스하려면 다음을 수행하십시오.</span><br>
+                            <span class="ask_form_agree_text_small">구매 과정 동안 사용한 이메일 주소 및 전화번호를 입력하십시오.</span></p>
+                        </div>
+                    </div>
+                    <p><input type="text" placeholder="이메일 주소" id="order_email_text" name="order_email_text" onchange="saveFormData(this)"></p>
+                    <p><input type="text" placeholder="전화번호" id="order_tel_text" name="order_tel_text" onchange="saveFormData(this)"></p>
+                </fieldset>
+            </div>
+            <div class="ask_form_sub">
+                <input type="submit"  value="조회하기"> 
+            </div>
+        </form>
+        </div>
+    </section>
+    <section class="order_check_table">
+        <div class="order_check_wrap">
+            <div class="order_check_text">
+                <table>
+                    <tr class="ask_loc_table_3">
+                     <th colspan="5" class="order_check_title">주문조회를 확인할 수 있습니다 !!</th>
+                    </tr>
+                    <tr class="ask_loc_table_2">
+                        <!-- <th>주문 번호</th>
+                        <th>주문일</th>
+                        <th>주문 종류</th>
+                        <th>매수</th>
+                        <th>금액</th> -->
+                        <th colspan="5">주문 번호 / 주문일 / 주문 종류 / 매수 / 금액</th>
+                        <!-- <th>주문일</th> 
+                        <th>주문 종류</th>
+                        <th>매수</th>
+                        <th>금액</th> -->
+                    </tr>
+                    <tr class="ask_loc_table_1" id="order_result_row">
+                        <!-- 조회 결과를 여기에 동적으로 추가할 예정 -->
+                    </tr>
+                    <tr class="ask_loc_table_1"id="no_order_row" style="display: none;">
+                        <td colspan="5">확인된 결과가 없습니다.</td>
+                      </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+      
+    </main>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+
+function loadFormData() {
+    const emailInput = document.getElementById('order_email_text');
+    const telInput = document.getElementById('order_tel_text');
+    const orderEmail = localStorage.getItem('orderEmail');
+    const orderTel = localStorage.getItem('orderTel');
+
+    if (orderEmail) {
+        emailInput.value = orderEmail;
+    }
+
+    if (orderTel) {
+        telInput.value = orderTel;
+    }
+}
+
+
+// 폼 데이터를 로컬 스토리지에 저장
+function saveFormData(element) {
+    const inputName = element.name;
+    const inputValue = element.value;
+    localStorage.setItem(inputName, inputValue);
+}
+
+// 폼 검증을 위한 함수
+const locArr = JSON.parse(localStorage.getItem("customer_info"));
+function validateForm(event) {
+    event.preventDefault();
+    const orderTable = document.createElement('table');
+    const emailInput = document.getElementById('order_email_text');
+    const telInput = document.getElementById('order_tel_text');
+    const emailValue = emailInput.value;
+    const telValue = telInput.value;
+
+    const orderResultRow = document.getElementById('order_result_row');
+    const noOrderRow = document.getElementById('no_order_row');
+
+    let foundResult = false; // 조회 결과가 있는지 여부를 저장하는 변수
+
+    locArr.forEach((v, i) => {
+        const obj = JSON.parse(v["customerInfo"]);
+        
+        if (obj.email === emailValue && obj.phone === telValue) {
+            foundResult = true;
+            const listObj = JSON.parse(v["list"]);
+            listObj.forEach((v2,i2) => {
+                const types = v2["common.typetext"];
+                const dates = new Date(v2['common.submittime']);
+                const codes = v2['common.submittime'];
+                const prices = v2['total_price.합계'];
+                let numbers = 0;
+                for ( key in v2) {
+                    if( key.split(".")[0] == "number" ) {
+                        numbers += +v2[key];
+                    }
+                
+                }
+                
+                // 조회 결과를 생성하고 추가합니다.
+                const orderRow = document.createElement('tr');
+                orderRow.classList.add("ask_loc_table_1");
+                const orderNumberCell = document.createElement('td');
+                const orderDateCell = document.createElement('td');
+                const orderTypeCell = document.createElement('td');
+                const orderQuantityCell = document.createElement('td');
+                const orderAmountCell = document.createElement('td');
+    
+                orderNumberCell.textContent = codes;
+                orderDateCell.textContent = formatDate(dates);
+                orderTypeCell.textContent = types;
+                orderQuantityCell.textContent = numbers;
+                orderAmountCell.textContent = prices;
+    
+                orderRow.appendChild(orderNumberCell);
+                orderRow.appendChild(orderDateCell);
+                orderRow.appendChild(orderTypeCell);
+                orderRow.appendChild(orderQuantityCell);
+                orderRow.appendChild(orderAmountCell);
+                orderTable.appendChild(orderRow);
+            })
+
+            // 이전 결과를 제거하고 새 결과를 추가합니다.
+            orderResultRow.innerHTML = '';
+            orderResultRow.appendChild(orderTable);
+            noOrderRow.style.display = 'none';
+        }
+    });
+
+    function formatDate(date) {
+        const q = new Date(date);
+        const year = q.getFullYear();
+        const month = q.getMonth()+1;
+        const day = q.getDate();
+        
+  return (`${year}년 ${month}월 ${day}일`);
+}
+
+    // 조회 결과가 없을 경우
+    if (!foundResult) {
+        orderResultRow.innerHTML = '';
+        noOrderRow.style.display = 'table-row';
+    }
+
+    return false;
+}
+
+// 페이지 로드 시 폼 데이터를 로컬 스토리지에서 가져옴
+window.addEventListener('load', loadFormData);
+</script>
+</body>
+</html>

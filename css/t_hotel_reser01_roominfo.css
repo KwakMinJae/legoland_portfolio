@@ -1,0 +1,358 @@
+.roomInfo_wrap > div {
+    width: 100%;
+    padding: 100px 0px;
+}
+.ri_elem {
+    max-width: var(--main-max-width);
+    min-width: var(--main-min-width);
+    width: 100%;
+    margin: auto;
+    
+    padding: 0px 1rem;
+    box-sizing: border-box;
+}
+.ri_elem_info_wrap {
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    backdrop-filter: blur(5px);
+    background-color: rgb(240,240,240,0.8);
+}
+.ri_elem_info {
+    padding: 2rem;
+}
+.ri_elem_info h4 {
+    font-size: 200%;
+    padding: 2rem;
+    word-break: keep-all;
+    white-space: nowrap;
+    color: #015820;
+}
+.ri_elem_info_wrap div {
+    width: 100%;
+    padding: 1rem 2rem;
+    line-height: 2;
+    font-size: 100%;
+    color: #555;
+}
+.ri_e_t_box {
+    width: 100%;
+    margin: 4rem 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .ri_elem_tag_page > div::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(to right,transparent,#666,transparent);
+    position: absolute;
+    left: 5%;
+    bottom: 0px;
+} */
+/* ======================================== slide =========== */
+.ri_e_t_slide {
+    width: var(--roomInfo-slide-unit);
+    aspect-ratio: 1/0.6;
+    /* max-width: 400px; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+}
+.ri_e_t_slide a {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    font-size: 0px;
+
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-color: rgba(255,255,255,0.4);
+}
+.slideback {
+    left: 0px;
+    background: url("../image/t_hotel_reser01/arrow_back.png") no-repeat center/50%;
+}
+.slidenext {
+    right: 0px;
+    background: url("../image/t_hotel_reser01/arrow_forward.png") no-repeat center/50%;
+}
+.ri_e_t_slide ul {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    transition: .5s ease;
+}
+.ri_e_t_slide li img {
+    display: block;
+    width: var(--roomInfo-slide-unit);
+    aspect-ratio: 1/0.6;
+    /* max-width: 400px; */
+}
+/* ======================================= theme info ====== */
+.ri_e_t_exp {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.ri_e_t_exp_title {
+    min-width: 20vw;
+    font-size: 150%;
+    font-weight: 600;
+    display: block;
+    background: linear-gradient(to right, var(--main-yellow-color) 90%, rgb(240,240,240));
+    padding: 1rem 3rem;
+}
+.ri_e_t_exp_open {
+    display: flex;
+    background-color: rgba(255,255,255,0.7);
+    border: 2px solid #6666667a;
+    color: #666;
+    padding: 2px 10px;
+    margin: 2rem 30px;
+    border-radius: 20px;
+}
+.ri_e_t_exp_open::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    aspect-ratio: 1/1;
+
+    background: url("../image/t_hotel_reser01/info.png") left center/ 20px no-repeat;
+    filter: contrast(10%);
+    padding-right: 5px;
+}
+/* ====================================== room info ====== */
+.ri_e_t_e_charWrap {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: brightness(0.8) blur(1px);
+    z-index: 9999;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.ri_e_t_e_char {
+    position: relative;
+    padding: 2rem 0px;
+    width: 55%;
+    display: none;
+    justify-content: center;
+    gap: 2rem;
+    align-items: start;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 2px 2px 5px #666;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.ri_e_t_e_char > a {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 0px;
+    background: rgb(250, 203, 164) url("../image/t_hotel_reser01/close_button.png") no-repeat center/20px;
+    border-radius: 50%;
+}
+.ri_e_t_e_char dl{
+    width: fit-content;
+    max-width: 30%;
+    padding-right: 30px;
+}
+.ri_e_t_e_char dt {
+    margin: 10px;
+    padding: 5px;
+    width: 70%;
+    border-bottom: 2px solid #00a138;
+    font-size: 105%;
+    color: #00a138;
+}
+.ri_e_t_e_char dd {
+    padding-bottom: 0.5rem;
+    position: relative;
+    font-size: 95%;
+    word-break: keep-all;
+}
+.ri_e_t_e_char dd::before {
+    content: "•";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    color: #00a138;
+    opacity: 0.7;
+}
+.ri_e_t_e_room {
+    padding-right: 20px;
+}
+.ri_e_t_e_room span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 23px 0px;
+    padding: 10px;
+    border: 2px solid #ffcf00;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.ri_e_t_e_room span:nth-of-type(1)::before {
+   content: "수용 인원";
+   display: block;
+   position: absolute;
+   top: -20px;
+   left: 10px;
+   font-size: 13px;
+   color: #666;
+}
+.ri_e_t_e_room span:nth-of-type(2)::before {
+   content: "메인 객실";
+   display: block;
+   position: absolute;
+   top: -20px;
+   left: 10px;
+   font-size: 13px;
+   color: #666;
+}
+.ri_e_t_e_room span:nth-of-type(3)::before {
+   content: "어린이 객실";
+   display: block;
+   position: absolute;
+   top: -20px;
+   left: 10px;
+   font-size: 13px;
+   color: #666;
+}
+.ri_e_t_e_room span:nth-of-type(4)::before {
+   content: "욕실";
+   display: block;
+   position: absolute;
+   top: -20px;
+   left: 10px;
+   font-size: 13px;
+   color: #666;
+}
+.ri_e_t_e_room span:nth-of-type(5)::before {
+   content: "객실 면적";
+   display: block;
+   position: absolute;
+   top: -20px;
+   left: 10px;
+   font-size: 13px;
+   color: #666;
+}
+.ri_e_t_e_room span:nth-of-type(6):not(.notroom)::before {
+   content: "뷰";
+   display: block;
+   position: absolute;
+   top: -20px;
+   left: 10px;
+   font-size: 13px;
+   color: #666;
+}
+/* ========================================= package info =========== */
+.ri_e_t_choice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 2rem;
+    /* border-left: 1px solid #66666638; */
+}
+.ri_e_t_choice ul {
+    width: 75%;
+}
+.ri_e_t_choice li {
+    margin-bottom: 1rem;
+    background-color: white;
+    font-size: 100%;
+    position: relative;
+}
+.ri_e_t_choice li::before {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 0.5rem;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -25%;
+    border-radius: 0.3rem;
+}
+.ri_e_t_choice_body {
+    height: 4rem;
+    position: relative;
+}
+.ri_e_t_choice_body a:first-child {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    padding: 0px 5%;
+}
+.ri_e_t_choice_body a:first-child::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background: url("../image/t_hotel_reser01/info.png") no-repeat scroll center/ 1rem;
+}
+.ri_e_t_c_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--price-btn-width);
+    height: 100%;
+    background-color: var(--color-orange);
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    font-size: 120%;
+    font-weight: 600;
+}
+/* ===================================================== */
+.ri_e_t_choice_slide {
+    position: relative;
+    background-color: white;
+    display: none;
+}
+.cs_exp {
+    width: 75%;
+    padding: 1rem;
+    font-size: 90%;
+    word-break: keep-all;
+    box-sizing: border-box;
+}
+.cs_exp span {
+    display: block;
+    padding: 3px 1rem;
+}
+.cs_price {
+    width: 25%;
+    padding: 1rem 1rem 2rem;
+    box-sizing: border-box;
+    line-height: 2;
+    width: var(--price-btn-width);
+    background-color: var(--color-orange);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+/* ===================================================== */

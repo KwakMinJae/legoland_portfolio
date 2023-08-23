@@ -1,0 +1,186 @@
+/* 메인전체class */
+.main_title {
+    margin: 0px auto 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url('../image/p_enj_sea_02/p_enj_sea_02_00.jpg')
+      top 30% center/cover no-repeat;
+    margin-top: 10vh;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+.main{
+    width:1350px;
+    margin: 100px auto 300px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+/* 본문의 내용 flex 공통 */
+.cont{
+    display: flex;
+    margin-bottom: 100px;
+    box-shadow: 2px 3px 5px 0px #666;
+}
+
+/* 구매하기 버튼 */
+.btn{
+    width: 255px;
+    height: 60px;
+    font-size: 150%;
+    background: #d01012;
+    color: white;
+    border: 0px;
+}
+.btn:hover{
+    background: #8C0008;
+    cursor: pointer;
+}
+
+/* 테이블 */
+.cont_table{
+    color: #0972BA;
+    font-weight: 600;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    width: 70%;
+}
+.cont_table th{
+    width: 130px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.cont_table td{
+    padding: 0px 20px;
+}
+.cont_table01{
+    background: #F2F7FC;
+}
+/* 본문 이미지 */
+.cont01_img{
+    width: 45%;
+}
+
+/* 본문 첫번째 내용 <Starry Night>*/
+.cont01{
+    width: 55%;
+    display: block;
+}
+.cont01 > h3{
+    height: 3em;
+    font-size: 200%;
+    margin: 0px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont01_ex{
+    padding: 2rem;
+    font-size: 120%;
+    background-color: rgb(255, 213, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.cont_table_title {
+    padding: 1rem 3rem;
+}
+.cont01_p {
+    font-size: 80%;
+    color: #666;
+    padding-left: 3rem;
+}
+
+/* 본문 두번째 제목 <불꽃 피날레>*/
+.cont02_title{
+    margin-bottom: 50px;
+    background: url("../image/p_enj_sea_02/p_enj_sea_02_02.jpg") no-repeat left top 20%/ cover;
+}
+.cont02_title h3 {
+    margin: 0px;
+    width: fit-content;
+    padding: 2rem 3rem;
+    background: #00a138;
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+}
+
+/* 본문 두번째 내용 */
+.cont02_img{
+    width: 45%;
+}
+.cont02_exp {
+    font-weight: 600;
+    font-size: 120%;
+    background-color: rgb(255, 213, 0);
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    word-break: keep-all;
+}
+.cont02 h3{
+    margin: 0px;
+    height: 4em;
+    font-size: 200%;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont02 > div {
+    padding: 1rem 3rem;
+}
+.cont02 strong {
+    display: block;
+    margin: 0px;
+}
+.cont02 span{
+    display: block;
+    font-size: 80%;
+    color: #666;
+}
+.cont02_span {
+    padding: 1rem 3rem 2rem;
+}

@@ -1,0 +1,115 @@
+/* main --------------------------------------- */
+main {
+    padding-top: 10vh;
+}
+.mainWrap {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: var(--main-bg-color);
+}
+/* tap --------------------------------------- */
+.tapBox {
+max-width: var(--whole-max-width);
+width: 100%;
+height: 10vh;
+margin: auto;
+position: relative;
+}
+.tapBox ul {
+display: flex;
+width: 100%;
+height: 100%;
+/* background-color: white; */
+background-color: rgb(255,255,255,0.2);
+box-sizing: border-box;
+border-left: 1px solid #7777776e;
+}
+.tapBox li {
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 0px 3px 0px #66666659;
+    font-size: 120%;
+    font-weight: bold;
+}
+.tapBox li a{
+    border-bottom: 1px solid #7777776e;
+    border-right: 1px solid #7777776e;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+}
+.tapBox li a.active_tap {
+background-color: var(--main-yellow-color);
+border-top: 1px solid #7777776e;
+border-bottom: none;
+}
+
+/* titleBox------------------------------------- */
+.title_wrap {
+    width: 100%;
+    height: 33vh;
+    background: url("../image/t_use_reser01_0/background02_sizeup.png") no-repeat center bottom 40%/ cover;
+}
+.title {
+    max-width: var(--whole-max-width);
+    width: 100%;
+    margin: auto;
+}
+.title_text_wrap {
+    width: fit-content;
+    height: 110px;
+    background-color: #00a138;
+    font-size: 48px;
+    margin-top: 6.5rem;
+    color: white;
+    padding: 0px 30px;
+    opacity: 0.95;
+    box-sizing: border-box;
+}
+.title h3 {
+    line-height: 110px;
+}
+/* btnBox------------------------------------- */
+.pageBtn {
+    width: 100%;
+    max-width: var(--whole-max-width);
+    margin: 3rem 0px;
+}
+.pageBtn a {
+    display: block;
+    font-size: 100%;
+    border-radius: 20px;
+}
+.pageBtn_next {
+    float: right;
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    background:rgba(238, 238, 238, 0.4) url("../image/t_use_reser01_0/arrow_forward_3.png") no-repeat center right 1rem / 2em 1.5em;
+}
+.pageBtn_back {
+    float: left;
+    padding: 0.5rem 2rem 0.5rem 4rem;
+    background:rgba(238, 238, 238, 0.4) url("../image/t_use_reser01_0/arrow_back_3.png") no-repeat center left 1rem / 2em 1.5em;
+}
+.pageBtn a:hover {
+    background-color: rgba(0, 128, 0, 0.4);
+}
+/* formBox------------------------------------- */
+.formBox {
+max-width: var(--whole-max-width);
+width: 100%;
+box-sizing: border-box;
+margin: auto;
+padding-top: 50px;
+background-color: var(--main-yellow-color);
+z-index: 5;
+}
+
+.form_loading {
+    width: 100%;
+    height: 100vh;
+    background-color: tomato;
+}

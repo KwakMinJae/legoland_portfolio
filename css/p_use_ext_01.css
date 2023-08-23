@@ -1,0 +1,350 @@
+h1,h2,h3,h4,h5,h6 { padding: 0px; margin: 0px;}
+p {padding: 0px; margin: 0px;}
+
+/* main */
+main {
+  height: 100%;
+  margin-top: 5.2%;
+  margin-bottom: 5.3%;
+
+}
+
+/* bg_section */
+main .bg_section {
+  width: 100%;
+  height: 400px;
+  background-image: url('../image/p_use_ext_01/bg_img/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+main .bg_section .page_title {
+  width: fit-content;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #00a138;
+  opacity: 0.95;
+  color: #fff;
+  font-size: 200%;
+  font-weight: 700;
+  padding: 0px 2em;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+/* bg_section */
+
+/* cont_section */
+main .cont_section {
+  width: 100%;
+  height: 100%;
+}
+/* cont_section */
+
+/* fastrack price */
+main .cont_section .inner .fastrack__price {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+main .cont_section .inner .fastrack__price .fastrack__price__virtual {
+  width: 400px;
+  height: 627px;
+  margin-left: 10px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__title {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: #004f84;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__price {
+  text-align: center;
+  line-height: 1.2;
+  padding: 20px;
+  color: #004f84;
+  background-color: #fff;
+}
+/* main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__price .text {} */
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__price .price {
+  font-size: 36px;
+}
+/* main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__visual {} */
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__visual .image {
+  width: 400px;
+  height: 200px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__visual .image img {
+  width: 400px;
+  height: 200px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__visual .text {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-color: #009d2e;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__notice_1 {
+  font-size: 24px;
+  color: #006db7;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #aaa;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__notice_2 {
+  font-size: 16px;
+  color: #006db7;
+  line-height: 1.5;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+main .cont_section .inner .fastrack__price .fastrack__price__express {
+  width: 400px;
+  height: 627px;
+  margin-left: 10px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__title {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: #004f84;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__price {
+  text-align: center;
+  line-height: 1.2;
+  padding: 20px;
+  color: #004f84;
+  background-color: #fff;
+}
+/* main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__price .text {} */
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__price .price {
+  font-size: 36px;
+}
+/* main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__visual {} */
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__visual .image {
+  width: 400px;
+  height: 200px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__visual .image img {
+  width: 400px;
+  height: 200px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__visual .text {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-color: #009d2e;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__notice_1 {
+  font-size: 24px;
+  color: #006db7;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px 10px; 
+  background-color: #fff;
+  border-bottom: 1px solid #aaa;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__notice_2 {
+  font-size: 16px;
+  color: #006db7;
+  line-height: 1.5;
+  padding: 10px 30px 33px 30px;
+  background-color: #fff;
+}
+
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate {
+  width: 400px;
+  height: 627px;
+  margin-left: 10px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__title {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: #004f84;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__price {
+  text-align: center;
+  line-height: 1.2;
+  padding: 20px;
+  color: #004f84;
+  background-color: #fff;
+}
+/* main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__price .text {} */
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__price .price {
+  font-size: 36px;
+}
+/* main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__visual {} */
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__visual .image {
+  width: 400px;
+  height: 200px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__visual .image img {
+  width: 400px;
+  height: 200px;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__visual .text {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-color: #009d2e;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__notice_1 {
+  font-size: 24px;
+  color: #006db7;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #aaa;
+}
+main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__notice_2 {
+  font-size: 16px;
+  color: #006db7;
+  line-height: 1.5;
+  padding: 10px 30px 33px 30px;
+  background-color: #fff;
+}
+/* fastrack price */
+
+
+
+/* fastrack howto */
+main .cont_section .inner .fastrack__howto {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+main .cont_section .inner .fastrack__howto h3 {
+  font-size: 150%;
+  font-weight: 700;
+  color:#006db7;
+}
+main .cont_section .inner .fastrack__howto .text_1 {
+  font-weight: 700;
+}
+main .cont_section .inner .fastrack__howto ul {
+  margin: 10px 0 10px 40px;
+}
+main .cont_section .inner .fastrack__howto ul li {
+  list-style: circle;
+}
+/* fastrack howto */
+
+/* fastrack notice */
+main .cont_section .inner .fastrack__notice {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+main .cont_section .inner .fastrack__notice h3 {
+  font-size: 150%;
+  font-weight: 700;
+  color:#006db7;
+}
+main .cont_section .inner .fastrack__notice .text_1 {
+  font-weight: 700;
+}
+main .cont_section .inner .fastrack__notice ul {
+  margin: 10px 0 10px 40px;
+}
+main .cont_section .inner .fastrack__notice .text li {
+  list-style: circle;
+}
+main .cont_section .inner .fastrack__notice .app {
+  margin-top: 20px;
+}
+main .cont_section .inner .fastrack__notice .app .ios {
+  display: flex;
+  margin: 0 0 0 20px;
+}
+main .cont_section .inner .fastrack__notice .app .ios p {
+  display: flex;
+  align-items: center;
+  padding: 0 53.3px 0 0;
+}
+/* main .cont_section .inner .fastrack__notice .app .ios a {} */
+main .cont_section .inner .fastrack__notice .app .android {
+  display: flex;
+  margin: 0 0 0 20px;
+}
+main .cont_section .inner .fastrack__notice .app .android p {
+  display: flex;
+  align-items: center;
+}
+main .cont_section .inner .fastrack__notice .app .android a {
+  margin-left: 20px;
+}
+/* fastrack notice */
+
+/* fastrack buy */
+main .cont_section .inner .fastrack__buy {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+main .cont_section .inner .fastrack__buy h3 {
+  font-size: 150%;
+  font-weight: 700;
+  color:#006db7;
+}
+main .cont_section .inner .fastrack__buy p b {
+  font-weight: 700;
+}
+main .cont_section .inner .fastrack__buy strong {
+  font-weight: 700;
+}
+main .cont_section .inner .fastrack__buy strong a {
+  color: red;
+}
+main .cont_section .inner .fastrack__buy strong a:hover {
+  opacity: .7;
+}
+/* fastrack buy */
+
+/* fastrack attraction */
+main .cont_section .inner .fastrack__attraction {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+main .cont_section .inner .fastrack__attraction h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color:#006db7;
+}
+main .cont_section .inner .fastrack__attraction .container {
+  display: grid;
+  grid-template-columns: 310px 310px 310px 310px;
+  grid-template-rows: 
+    300px
+    50px
+    300px
+    50px
+    300px
+    50px
+    300px
+    50px
+    300px
+    50px
+  ;
+  justify-content: center;
+  margin-top: 50px;
+}
+main .cont_section .inner .fastrack__attraction .container .img {
+  text-align: center;
+}
+main .cont_section .inner .fastrack__attraction .container .text {
+  text-align: center;
+  color: #004f84;
+  font-weight: 600;
+  padding: 10px 0;
+}

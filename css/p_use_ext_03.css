@@ -1,0 +1,187 @@
+
+/* main */
+main {
+  height: 100%;
+  margin-top: 5.2%;
+  margin-bottom: 5.3%;
+  position: relative;
+}
+
+/* bg_section */
+main .bg_section {
+  width: 100%;
+  height: 500px;
+  background-image: url('../image/p_use_ext_03/bg_img/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .bg_section .page_title {
+  width: 1210px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #31a1e0;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  padding-left: 10px;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+/* bg_section */
+
+/* cont_section */
+main .cont_section {
+  width: 100%;
+  height: 100%;
+}
+/* cont_section */
+
+/* section 1 */
+main .cont_section .inner .section_1 {
+  margin: 30px 0 0 0;
+}
+main .cont_section .inner .section_1 p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 30px 0;
+}
+/* section 1 */
+
+/* section 2 */
+main .cont_section .inner .section_2 {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+main .cont_section .inner .section_2 .image_price {
+  width: 650px;
+  height: 650px;
+  background-image: url('../image/p_use_ext_03/section_img/1.jpg');
+  display: flex;
+  justify-content: end;
+}
+main .cont_section .inner .section_2 .image_price .badge {
+  width: 229px;
+  height: 105px;
+  background-color: red;
+  color: #fff;
+  padding: 10px 0 0 0;
+}
+main .cont_section .inner .section_2 .image_price .badge p {
+  text-align: center;
+  margin: 5px 0;
+}
+main .cont_section .inner .section_2 .image_price .badge p:nth-child(2) {
+  font-size: 41px;
+  font-weight: 700;
+}
+main .cont_section .inner .section_2 .text {
+  width: 650px;
+  height: 650px;
+  margin: 0 0 0 30px;
+}
+main .cont_section .inner .section_2 .text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color:#006db7;
+  margin: 0 0 30px 0;
+}
+main .cont_section .inner .section_2 .text p {
+  margin: 0 0 30px 0;
+  line-height: 1.3;
+}
+main .cont_section .inner .section_2 .text .bold {
+  font-weight: 700;
+}
+/* section 2 */
+
+/* section 3 */
+main .cont_section .inner .section_3 {
+  margin: 100px 0 0 0;
+}
+main .cont_section .inner .section_3 .buy {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+main .cont_section .inner .section_3 .buy .title {
+  background-color: #004f84;
+  font-size: 32px;
+  color: #fff;
+  padding: 30px;
+}
+main .cont_section .inner .section_3 .buy .price {
+  display: flex;
+  justify-content: center;
+}
+main .cont_section .inner .section_3 .buy .price_1,
+main .cont_section .inner .section_3 .buy .price_2 {
+  width: 100%;
+  color:#006db7;
+  line-height: 1.2;
+  padding: 20px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+main .cont_section .inner .section_3 .buy .price_2 {
+  border-right: 1px solid;
+}
+main .cont_section .inner .section_3 .buy .price_1 p:nth-child(2),
+main .cont_section .inner .section_3 .buy .price_2 p:nth-child(2) {
+  font-size: 40px;
+}
+main .cont_section .inner .section_3 .buy .notice {
+  padding: 20px;
+  color: #006db7;
+  line-height: 1.3;
+  font-weight: 700;
+  border-left: 1px solid #004f84;
+  border-right: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .image img {
+  width: 800px;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+main .cont_section .inner .section_3 .buy .image p {
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .text_1 {
+  background-color: #fff;
+  font-size: 24px;
+  color: #006db7;
+  padding: 20px;
+  border: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .text_2 {
+  text-align: start;
+  padding: 20px;
+  border-right: 1px solid #004f84;
+  border-bottom: 1px solid #004f84;
+  border-left: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .text_2 ul {
+  padding: 0 0 0 20px;
+}
+main .cont_section .inner .section_3 .buy .text_2 ul li {
+  list-style:decimal-leading;
+  margin: 20px 0;
+  line-height: 1.3;
+  color: #006db7;
+}
+main .cont_section .inner .section_3 .buy a {
+  width: 100%;
+}
+/* section 3 */
